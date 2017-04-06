@@ -6,6 +6,8 @@ library(randomForest);
 library(RRF);
 graphics.off()
 
+
+
 sourceDir <- function(path, trace = TRUE) {
   for (nm in list.files(path, pattern = "\\.[Rr]$")) {
     if(trace) cat(nm)
@@ -35,27 +37,16 @@ ruleExec <- unique(ruleExec) # remove same rules. NOTE: for variable interaction
 ix <- sample(1:length(ruleExec),min(2000,length(ruleExec))) #randomly select 2000 rules
 ruleExec <- ruleExec[ix,,drop=FALSE]
 ruleMetric <- getRuleMetric(ruleExec,X,Y)
-ruleMetric <- selectRuleRRF(ruleMetric,X,Y)
+
+source("devR/selectRuleLinear.R")
+ruleMetricLinear <- ruleSelectLinear(ruleExec,X,Y)
 
 # cvob1=cv.glmnet(as.matrix(X[,,drop=FALSE]),Y, type.measure="mae")
-library(glmnet)
-Y <- as.numeric(Y)
-if (is.numeric(Y) == FALSE) stop("Target variable needs to be numerical!")
-# if (length(unique(Y)) > 2) stop("Currently only support two class problem!")
 
 
-ruleI = sapply(ruleMetric[,"condition"],rule2Table,X,Y)
-colnamesSave <- colnames(ruleI)
-colnames(ruleI) <- paste0("R_",1:ncol(ruleI))
-glmModel <- cv.glmnet(as.matrix(ruleI),Y, type.measure="mae")
-coef <- coef(glmModel)
-
-grepl("^[^_]+_2",s)
-
-ix.rules <- which( grepl("R_",rownames(coef) ))
-ix.non.zero <- which (as.numeric(coef) != 0)
-ix.effective.rules <- intersect(ix.rules, ix.non.zero)
-coef[ix.effective.rules,]
+rWeights <- cbind(ix=as.numeric(ruleIx), imp=as.numeric(coef[ix.effective.rules,]) )
+rownames(rWeights) <- NULL
+rWeights <- rWeights[order(-abs(rWeights[,"imp"])),]
 
 
 coefReg <- 0.95 - 0.01*as.numeric(ruleMetric[,"len"])/max(as.numeric(ruleMetric[,"len"]))

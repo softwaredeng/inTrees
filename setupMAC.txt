@@ -1,0 +1,66 @@
+
+
+install packages in MAC  (if only R code is needed)
+Building R Packages An Introduction David Diez
+http://www.hsph.harvard.edu/statinformatics/soft/files/buildingrpackages.pdf
+
+GPL (>=2)
+
+Install required software:
+- LaTeX compiler, such as the one in MacTex, are generally required
+for checking a package tug.org/mactex
+>> need to install the complete one ~2G
+- Xcode
+
+load all the R functions by source("XX.R")
+
+package.skeleton("inTrees")
+- this would produce the structure
+
+need to set up the path the latextpdf
+Sys.which("pdflatex") : ""
+Sys.getenv("PATH") : "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+
+Sys.setenv(PATH=paste(Sys.getenv("PATH"),"/usr/texbin",sep=":"))
+
+Sys.getenv("PATH") ->
+"/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin"
+
+Sys.which("pdflatex")
+
+
+
+To build a
+.tar.gz
+le (a \tarball") for sharing the package
+R CMD build inTrees
+To install the package from its folder
+R CMD install myPackage
+To check the package, perhaps before submitting to CRAN
+R CMD check myPackage
+
+R CMD check --as-cran inTrees_1.1.tar.gz
+
+sudo tlmgr update --self
+sudo tlmgr install inconsolata
+sudo tlmgr install upquote
+
+When submitting a package to CRAN you should either
+
+use the submission form at http://CRAN.R-project.org/submit.html (and not send an email). You will be sent a confirmation email which needs to be accepted.
+-- looks like there is no link by this way... need to confirm...
+Houtao Deng 
+softwaredeng@gmail.com
+
+install binary packages
+MAC or linux-like: in command line, cd to the directory of the package:
+R CMD INSTALL inTrees_0.1.tar.gz
+
+windows: in cammand prompt, cd to the directory of the package:
+R CMD INSTALL inTrees_0.1.tar.gz
+
+install.packages('arules', repos='http://cran.us.r-project.org')
+install.packages('RRF', repos='http://cran.us.r-project.org')
+install.packages('gbm', repos='http://cran.us.r-project.org')
+install.packages('randomForest', repos='http://cran.us.r-project.org')
