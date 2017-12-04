@@ -1,5 +1,5 @@
 treeVisit <-
-function(tree,rowIx,count,ruleSet,rule,levelX,length,max_length)
+function(tree,rowIx,count,ruleSet,rule,levelX,length,max_length, round=2)
 {
   #print(tree[rowIx,"prediction"])
   #print(tree[rowIx,])
@@ -12,7 +12,7 @@ function(tree,rowIx,count,ruleSet,rule,levelX,length,max_length)
     return(list(ruleSet = ruleSet, count=count))
   }
   xIx <- tree[rowIx,"split var"]
-  xValue <- tree[rowIx,"split point"]
+  xValue <- round(tree[rowIx,"split point"], round)
   
   if(is.null(levelX[[xIx]])){
    lValue <- paste("X[,",xIx, "]<=",xValue,sep="")
