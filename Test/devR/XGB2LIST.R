@@ -21,7 +21,6 @@ XGB2LIST<-
     
     formatXGB <-
       function(tree){
-        
         a <- tree
         rownames(a) <- 1:nrow(a)
         a$status <- a$`split var`
