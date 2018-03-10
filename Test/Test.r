@@ -46,14 +46,14 @@ errRFInTrees=1-sum(pred==Y)/length(pred);
 
 # Test XGBoost
 X1 <- data.table(X, keep.rownames = F)
-sparse_matrix <- model.matrix(X20~., data=X)
-xgb <- xgboost(sparse_matrix, label = as.numeric(Y) - 1, nrounds = 2,objective = "binary:logistic" )
+sparse_matrix <- model.matrix(X20~.-1, data=X)
+xgb <- xgboost(sparse_matrix, label = as.numeric(Y) - 1, nrounds = 20,objective = "binary:logistic" )
 feature_names <- colnames(sparse_matrix)
 xt<-xgb.model.dt.tree(feature_names = as.character(1:length(feature_names)), model=xgb)
 
 xt[Feature == 'Leaf', Feature := '-1']
 xt[, 'split var' := as.integer(Feature)]
-xt[, 'split point' := ifelse(`split var` > -1, Split, Quality)]
+xt[, 'split point' := Split]
 xt[, 'left daughter' := as.integer(tstrsplit(Yes, '-')[[2]]) + 1]
 xt[, 'right daughter' := as.integer(tstrsplit(No, '-')[[2]]) + 1]
 xt[, MissingNode := as.integer(tstrsplit(Missing, '-')[[2]]) + 1]
@@ -63,8 +63,8 @@ xt[, Node := Node + 1]
 xt[, c('ID', 'Yes', 'No', 'Split','Missing', 'Quality', 'Cover', 'Feature') := NULL]
 for (f in c('left daughter', 'right daughter', 'MissingNode'))
   set(xt, which(is.na(xt[[f]])), f, -1)
-treeList1 <- list()
-treeList1$ntree <-length(xt)
+treeList1 <- NULL
+treeList1$ntree <- length(unique(xt$Tree))
 treeList1$list <- split(xt, by="Tree")
 formatXGB <-
   function(tree){
@@ -72,14 +72,16 @@ formatXGB <-
     tree$status <- ifelse(tree$`split var`==-1,-1,1)
     tree$`split point` <- as.numeric(tree$`split point`)
     tree <- tree[,c("left daughter","right daughter","MissingNode","split var","split point","status")]
-    ix <- tree$MissingNode[which(tree$MissingNode>0)]
-    if(length(ix)>0)  tree$status[ix] <- 10 #missing 
+    # ix <- tree$MissingNode[which(tree$MissingNode>0)]
+    # if(length(ix)>0)  tree$status[ix] <- 10 #missing 
     tree <- tree[,c("left daughter","right daughter","split var","split point","status")]
     tree <- as.data.frame(tree)
 }
-treeList$list=lapply(treeList1$list,formatXGB)
+treeList1$list <- lapply(treeList1$list,formatXGB)
 
-ruleExec <- extractRules(treeList,sparse_matrix) 
+sourceDir("devR/")
+ruleExec1 <- extractRules(treeList1,sparse_matrix) 
+
 
 # ----- 
 

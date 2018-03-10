@@ -1,19 +1,15 @@
 treeVisit <-
-function(tree,rowIx,count,ruleSet,rule,levelX,length,max_length,round=NULL)
+function(tree,rowIx,count,ruleSet,rule,levelX,length,max_length,digits=NULL)
 {
-  #print(tree[rowIx,"prediction"])
-  #print(tree[rowIx,])
-  #print("----->")
-  #print(tree)
-  #print(rowIx)
   if( tree[rowIx,"status"] == -1 | length == max_length ){
     count = count + 1
     ruleSet[[count]] = rule
     return(list(ruleSet = ruleSet, count=count))
   }
   xIx <- tree[rowIx,"split var"]
-  is.integer(round) xValue <- round(tree[rowIx,"split point"], round)
-  
+  xValue <- tree[rowIx,"split point"]
+  if(is.integer(digits)) xValue <- round(tree[rowIx,"split point"], digits)
+
   if(is.null(levelX[[xIx]])){
    lValue <- paste("X[,",xIx, "]<=",xValue,sep="")
    rValue <- paste("X[,",xIx, "]>",xValue,sep="")
