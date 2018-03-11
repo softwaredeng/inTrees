@@ -1,6 +1,11 @@
 presentRules <-
-function(rules,colN){
+function(rules,colN,digits=NULL){
   for(i in 1:nrow(rules[,"condition",drop=FALSE])){
+    if(is.integer(as.integer(digits))){
+      digits <- as.integer(digits) 
+      rules[,"freq"] <- round(as.numeric( rules[,"freq"]),digits=digits)
+      rules[,"err"] <- round(as.numeric( rules[,"err"]),digits=digits)
+    }
     A <- regexpr("X\\[,1\\]==X\\[,1\\]", rules[i,"condition"])
     thisPos <- as.numeric(A[[1]])
     thisLen <- attr(A, "match.length")
