@@ -1,5 +1,7 @@
 extractRules <-
 function(treeList,X,ntree=100,maxdepth=6,random=FALSE,digits=NULL){
+ if(is.integer(as.integer(digits))) digits <- as.integer(digits) 
+ 
  levelX = list()
  for(iX in 1:ncol(X))
  levelX <- c(levelX,list(levels(X[,iX])))
@@ -13,7 +15,7 @@ function(treeList,X,ntree=100,maxdepth=6,random=FALSE,digits=NULL){
  # tree = getTree(rf,iTree,labelVar=FALSE)
  tree <- treeList$list[[iTree]]
  ruleSet = vector("list", length(which(tree[,"status"]==-1)))
- res = treeVisit(tree,rowIx = rowIx,count,ruleSet,rule,levelX,length=0,max_length=max_length,digits)
+ res = treeVisit(tree,rowIx = rowIx,count,ruleSet,rule,levelX,length=0,max_length=max_length,digits=digits)
  allRulesList = c(allRulesList, res$ruleSet)
  }
 allRulesList <- allRulesList[!unlist(lapply(allRulesList, is.null))]
