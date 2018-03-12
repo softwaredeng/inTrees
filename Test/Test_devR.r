@@ -25,7 +25,7 @@ Y <-  X[,ncol(X)]
 X <- X[,-ncol(X)]
 
 #Orig RF and calculate the importance
-rf <- randomForest(X, as.factor(Y),ntree=100) 
+rf <- randomForest(X, as.factor(Y),ntree=2) 
 
 treeList <- RF2List(rf)
 ruleExec <- extractRules(treeList,X) 
@@ -91,7 +91,7 @@ ruleExec <- extractRules(tree_list,data,digits=3)
 ruleExec <- unique(ruleExec) # remove same rules. NOTE: for variable interaction analysis, you should NOT perform this step
 ix <- sample(1:length(ruleExec),min(2000,length(ruleExec))) #randomly select 2000 rules
 ruleExec <- ruleExec[ix,,drop=FALSE]
-ruleMetric <- getRuleMetric(ruleExec,data,Y)
+ruleMetric <- getRuleMetric(ruleExec,X,Y)
 ruleMetric <- pruneRule(ruleMetric,data,Y,typeDecay = 1)
 ruleSelect <- selectRuleRRF(ruleMetric, data, Y)
 ruleMetric <- unique(ruleMetric)
@@ -100,6 +100,27 @@ ruleClassifier <- buildLearner(ruleMetric,data,Y)
 readable <- presentRules(ruleClassifier,colnames(data),digits=3)
 pred <- applyLearner(ruleClassifier,data)
 errGBM <- 1-sum(pred==Y)/length(pred);
+
+# Test Ranger
+library(ranger)
+X <- within(iris,rm("Species")); Y <- iris[,"Species"]
+rf_ranger <- ranger(Species ~ ., data = iris)
+tree_list <- Ranger2List(rf_ranger)
+
+ruleExec <- extractRules(tree_list,X) 
+ruleExec <- unique(ruleExec) # remove same rules. NOTE: for variable interaction analysis, you should NOT perform this step
+ix <- sample(1:length(ruleExec),min(2000,length(ruleExec))) #randomly select 2000 rules
+ruleExec <- ruleExec[ix,,drop=FALSE]
+ruleMetric <- getRuleMetric(ruleExec,X,Y)
+ruleMetric <- pruneRule(ruleMetric,X,Y,typeDecay = 1)
+ruleSelect <- selectRuleRRF(ruleMetric, X, Y)
+ruleMetric <- unique(ruleMetric)
+
+ruleClassifier <- buildLearner(ruleMetric,X,Y)
+readable <- presentRules(ruleClassifier,colnames(X),digits=3)
+pred <- applyLearner(ruleClassifier,X)
+print( 1-sum(pred==Y)/length(pred) )
+
 
 
 # //
