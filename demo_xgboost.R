@@ -1,9 +1,19 @@
+rm(list= ls())
 library(xgboost)
 library(inTrees)
 
+# data 1
 X <- within(iris,rm("Species")); Y <- iris[,"Species"]
 model_mat <- model.matrix(~. -1, data=X)
 xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 40,objective = "multi:softprob", num_class = 3 )
+
+# data set 2
+# path <- paste(getwd(), "/Test/data/german.data",sep="") #musk vehicle is good austra
+# data <- read.table(path,header=TRUE,sep = ",")
+# X <- within(data,rm("Y")); Y <- data$Y
+# model_mat <- model.matrix(~. -1, data=X)
+# xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 50,objective = "binary:logistic" )
+
 
 tree_list <- XGB2List(xgb,model_mat)
 
