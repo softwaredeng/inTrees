@@ -1,13 +1,10 @@
 singleRuleList2Exec <-
 function(ruleList,typeX){ #numeric: 1; categorical: 2s
   #ruleExec <- "which("
-  #print("t1")
   ruleExec <- ""
   vars <- ls(ruleList)
   #ruleL <- length(unique(vars))
   vars <- vars[order(as.numeric(vars))]
-  #print(vars)
-  #print(ruleList)
   for(i in 1:length(vars)){
     if(typeX[as.numeric(vars[i])]==2){
       values <- paste("c(",paste(  paste("'",ruleList[[vars[i]]],"'",sep="")    ,collapse=","),")",sep="")
@@ -18,7 +15,6 @@ function(ruleList,typeX){ #numeric: 1; categorical: 2s
     if(i==1)ruleExec <- paste(ruleExec, tmp,sep="")
     if(i>1)ruleExec <- paste(ruleExec, " & ", tmp, sep="")
   }
-  #print("t2")
   #ruleExec <- paste(ruleExec,")",sep="")  
   return(c(ruleExec))
 }

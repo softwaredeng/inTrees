@@ -14,7 +14,7 @@ function(treeList,X,ntree=100,maxdepth=6,random=FALSE,digits=NULL){
  rule = list(); count = 0; rowIx = 1; 
  # tree = getTree(rf,iTree,labelVar=FALSE)
  tree <- treeList$list[[iTree]]
- if(nrow(tree)<=1) next
+ if(nrow(tree)<=1) next # skip if there is no split
  ruleSet = vector("list", length(which(tree[,"status"]==-1)))
  res = treeVisit(tree,rowIx = rowIx,count,ruleSet,rule,levelX,length=0,max_length=max_length,digits=digits)
  allRulesList = c(allRulesList, res$ruleSet)
