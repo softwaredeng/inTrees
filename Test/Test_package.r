@@ -41,7 +41,6 @@ require(data.table)
 require(xgboost)
 # test data set 1: iris
 X <- within(iris,rm("Species")); Y <- iris[,"Species"]
-X <- within(iris,rm("Species")); Y <- iris[,"Species"]
 model_mat <- model.matrix(~. -1, data=X)
 xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 50,objective = "multi:softprob", num_class = 3 )
 
