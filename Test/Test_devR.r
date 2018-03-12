@@ -47,9 +47,8 @@ require(data.table)
 require(xgboost)
 # test data set 1: iris
 X <- within(iris,rm("Species")); Y <- iris[,"Species"]
-X <- within(iris,rm("Species")); Y <- iris[,"Species"]
 model_mat <- model.matrix(~. -1, data=X)
-xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 50,objective = "multi:softprob", num_class = 3 )
+xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 500,objective = "multi:softprob", num_class = 3 )
 
 # test data set 2: german data
 path <- paste(getwd(), "/data/","german.data",sep=""); #musk vehicle is good austra
@@ -57,11 +56,11 @@ data <- read.table(path,header=TRUE,sep = ",")
 data[data[,]=="?"] <- NA; data <- na.roughfix(data)#Impute Missing Values by median/mode
 X <-  within(data,rm("Y")); Y <- data[,"Y"]
 model_mat <- model.matrix(~. -1, data=X)
-xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 50,objective = "binary:logistic" )
+xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 150,objective = "binary:logistic" )
 
 tree_list <- XGB2List(xgb,model_mat)
 
-ruleExec <- extractRules(tree_list,model_mat,digits=3) 
+ruleExec <- extractRules(tree_list,model_mat) 
 ruleExec <- unique(ruleExec) # remove same rules. NOTE: for variable interaction analysis, you should NOT perform this step
 ix <- sample(1:length(ruleExec),min(2000,length(ruleExec))) #randomly select 2000 rules
 ruleExec <- ruleExec[ix,,drop=FALSE]
