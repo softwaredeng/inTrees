@@ -267,7 +267,7 @@ Type rrfNews() to see new features/changes/bug fixes.
 > library(xtable)
 > print(xtable(read), include.rownames=FALSE)
 % latex table generated in R 3.4.3 by xtable 1.8-2 package
-% Sun Mar 11 19:56:22 2018
+% Sun Mar 11 21:56:39 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{lllll}
@@ -286,7 +286,7 @@ len & freq & err & condition & pred \\
 \end{table}
 > print(xtable(ruleMetric[1:2,]), include.rownames=FALSE)
 % latex table generated in R 3.4.3 by xtable 1.8-2 package
-% Sun Mar 11 19:56:22 2018
+% Sun Mar 11 21:56:39 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{lllll}
@@ -1135,7 +1135,7 @@ function (ruleMetric, X, type = "r", method = "median")
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  6.888 0.176 5.185 0 0 
+Time elapsed:  6.657 0.2 5.165 0 0 
 > grDevices::dev.off()
 null device 
           1 
