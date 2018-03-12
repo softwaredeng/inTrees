@@ -1,14 +1,14 @@
 Package: inTrees
 Title: Interpret Tree Ensembles
-Version: 1.1
-Date: 2014-07-04
-Imports: RRF, arules, gbm, xtable
-Author: Houtao Deng
+Version: 1.2
+Date: 2018-03-10
+Imports: RRF, arules, gbm, xtable, xgboost, data.table, methods
+Author: Houtao Deng, Xin Guan, Vadim Khotilovich
 Maintainer: Houtao Deng <softwaredeng@gmail.com>
 Description: For tree ensembles such as random forests, regularized random forests and gradient boosted trees, this package provides functions for: extracting, measuring and pruning rules; selecting a compact rule set; summarizing rules into a learner; calculating frequent variable interactions; formatting rules in latex code.  
-URL: https://sites.google.com/site/houtaodeng/intrees
+BugReports: https://github.com/softwaredeng/inTrees/issues
 License: GPL (>= 3)
-Packaged: 2014-07-24 21:26:06 UTC; hdeng1
+Packaged: 2018-03-10 21:26:06 UTC; hdeng1
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-07-25 07:42:10
+Date/Publication: 2018-03-10 21:26:06

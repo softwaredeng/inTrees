@@ -1,6 +1,6 @@
 extractRules <-
 function(treeList,X,ntree=100,maxdepth=6,random=FALSE,digits=NULL){
- if(is.integer(as.integer(digits))) digits <- as.integer(digits) 
+ if(is.numeric(digits)) digits <- as.integer(abs(digits))
  
  levelX = list()
  for(iX in 1:ncol(X))

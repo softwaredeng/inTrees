@@ -1,10 +1,12 @@
 require(xgboost)
 require(data.table)
-XGB2LIST<-
+XGB2List<-
   function(xgb, X)
   {
     feature_names <- colnames(X)
-    xt<-xgb.model.dt.tree(feature_names = as.character(1:length(feature_names)), model=xgb)
+    xt <- xgb.model.dt.tree(feature_names = as.character(1:length(feature_names)), model=xgb)
+    # avoid cran note: no visible binding for global variable
+    Feature=Split=Yes=No=MissingNode=Missing=Weight=Cover=Prediction=Quality=Node=NULL
     xt[Feature == 'Leaf', Feature := '-1']
     xt[, 'split var' := as.integer(Feature)]
     xt[, 'split point' := Split]

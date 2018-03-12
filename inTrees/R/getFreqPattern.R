@@ -1,3 +1,5 @@
+require(arules)
+require(methods)
 getFreqPattern <-
 function(ruleMetric,minsup=0.01,minconf=0.5,minlen=1,maxlen=4){
   # set up 
@@ -11,6 +13,7 @@ function(ruleMetric,minsup=0.01,minconf=0.5,minlen=1,maxlen=4){
   rules1 <- apriori( 
     trans1,
     parameter = list(supp=minsup,conf=minconf,minlen=minlen,maxlen=maxlen), 
+    control = list(verbose=FALSE),
     appearance = list(none=NULL,rhs =yrhs,default="lhs")
   )
   #rules1= sort(rules1, decreasing = FALSE, by = "confidence")
@@ -20,8 +23,8 @@ function(ruleMetric,minsup=0.01,minconf=0.5,minlen=1,maxlen=4){
   #quality = quality[qIx,1:2]
   #inspect(rules1)
   
-  lhs = as(lhs(rules1),"list")
-  rhs = as(rhs(rules1),"list")
+  lhs = methods::as(lhs(rules1),"list")
+  rhs = methods::as(rhs(rules1),"list")
   rhs <- gsub("=>", "", rhs) 
   quality <- quality(rules1)
   ix_empty <- NULL
