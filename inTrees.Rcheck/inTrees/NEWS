@@ -1,0 +1,15 @@
+Version 1.0
+* First version of inTrees. 
+
+Version 1.1
+* add typeDecay in pruneSingleRule (relative error increase or error increase)
+* revise the simulate data function (team optimization data)
+
+Version 1.2
+* add support for xgboost
+* add rounding option for rule extraction
+* mute Apriori function when generating frequent patterns
+* Xin Guan and Vadim Khotilovich contributed to this release
+
+Version 1.3
+* add support for ranger

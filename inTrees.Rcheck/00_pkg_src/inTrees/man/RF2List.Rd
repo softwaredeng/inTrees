@@ -1,20 +1,20 @@
-\name{Ranger2List}
-\alias{Ranger2List}
+\name{RF2List}
+\alias{RF2List}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Transform a ranger object to a list of trees
+Transform a random forest object to a list of trees
 }
 \description{
-Transform a ranger object to a list of trees
+Transform a random forest object to a list of trees
 }
 \usage{
-Ranger2List(rf_ranger)
+RF2List(rf)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{rf_ranger}{
+  \item{rf}{
 %%     ~~Describe \code{rf} here~~
-ranger object
+random forest object
 }
 }
 % \details{
@@ -36,16 +36,17 @@ a list of trees
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{Ranger2List}}
+\code{\link{RF2List}}
 }
 \examples{
-library(ranger)
+library(RRF)
 data(iris)
-rf_ranger <- ranger(Species ~ ., data = iris)
-tree_list <- Ranger2List(rf_ranger)
 X <- iris[,1:(ncol(iris)-1)]
-ruleExec <- extractRules(tree_list,X) # transform to R-executable rules
+target <- iris[,"Species"] 
+rf <- RRF(X,as.factor(target),ntree=100) # build an ordinary RF 
+treeList <- RF2List(rf)
+ruleExec <- extractRules(treeList,X) # transform to R-executable rules
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ranger }
+\keyword{ randomforest }

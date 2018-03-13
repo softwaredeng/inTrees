@@ -44,7 +44,7 @@ R CMD check inTrees
 
 R CMD check --as-cran inTrees_1.2.tar.gz
 
-install.packages("inTrees_1.2.tar.gz", repos = NULL)
+install.packages("inTrees_1.3.tar.gz", repos = NULL)
 
 sudo tlmgr update --self
 sudo tlmgr install inconsolata

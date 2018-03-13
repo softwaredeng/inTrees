@@ -1,27 +1,30 @@
-\name{Ranger2List}
-\alias{Ranger2List}
+\name{applyLearner}
+\alias{applyLearner}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Transform a ranger object to a list of trees
+apply a simplified tree ensemble learner (STEL) to data
 }
 \description{
-Transform a ranger object to a list of trees
+apply STEL to data and get predictions
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-Ranger2List(rf_ranger)
+applyLearner(learner, X)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{rf_ranger}{
-%%     ~~Describe \code{rf} here~~
-ranger object
+  \item{learner}{
+  a matrix with rules ordered by priority
+}
+  \item{X}{
+  predictor variable matrix
 }
 }
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }
 \value{
-a list of trees 
+ predictions for the data
 }
 % \references{
 % Houtao Deng, Interpreting Tree Ensembles with Intrees, technical report, 2014
@@ -36,16 +39,13 @@ a list of trees
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{Ranger2List}}
+\code{\link{buildLearner}}
 }
 \examples{
-library(ranger)
-data(iris)
-rf_ranger <- ranger(Species ~ ., data = iris)
-tree_list <- Ranger2List(rf_ranger)
-X <- iris[,1:(ncol(iris)-1)]
-ruleExec <- extractRules(tree_list,X) # transform to R-executable rules
+# see function "buildLearner" for examples
+# pred <- applyLearner(learner,X)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ranger }
+\keyword{ apply }
+\keyword{ predict }% __ONLY ONE__ keyword per line
