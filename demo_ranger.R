@@ -15,13 +15,14 @@ sourceDir("Test/devR/")
 
 # data 1
 X <- within(iris,rm("Species")); Y <- iris[,"Species"]
-rf_ranger <- ranger(Species ~ ., data = iris)
+rf_ranger <- ranger(Species ~ ., data = iris, num.trees = 100)
 
 # data set 2
 path <- paste(getwd(), "/Test/data/german.data",sep="") #musk vehicle is good austra
 data <- read.table(path,header=TRUE,sep = ",")
+data$Y <- as.factor(data$Y)
 X <- within(data,rm("Y")); Y <- data$Y
-rf_ranger <- ranger(Y ~ ., data = data)
+rf_ranger <- ranger(Y ~ ., data = data, num.trees = 100)
 
 tree_list <- Ranger2List(rf_ranger)
 
@@ -39,4 +40,5 @@ rule_classifier <- buildLearner(rule_metric,X,Y)
 readable <- presentRules(rule_classifier,colnames(X),digits=3)
 pred <- applyLearner(rule_classifier,X)
 print(readable)
-print( 1-sum(pred==Y)/length(pred) )
+print( paste0("error:", 1-sum(pred==Y)/length(pred) ))
+
