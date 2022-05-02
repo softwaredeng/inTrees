@@ -42,7 +42,7 @@ R CMD install inTrees
 To check the package, perhaps before submitting to CRAN
 R CMD check inTrees
 
-R CMD check --as-cran inTrees_1.2.tar.gz
+R CMD check --as-cran inTrees_1.3.tar.gz
 
 install.packages("inTrees_1.3.tar.gz", repos = NULL)
 

@@ -1,6 +1,7 @@
-rm(list= ls())
-library(randomForest)
-library(inTrees)
+
+print(paste0("test rf rules"))
+suppressMessages(library(randomForest))
+
 
 # data set 1
 X <- within(iris,rm("Species")); Y <- iris[,"Species"]
@@ -8,7 +9,7 @@ rf <- randomForest(X, as.factor(Y),ntree=100)
 
 # data set 2
 path <- paste(getwd(), "/Test/data/german.data",sep="") #musk vehicle is good austra
-data <- read.table(path,header=TRUE,sep = ",")
+data <- read.table(path,header=TRUE,sep = ",",stringsAsFactors=TRUE)
 X <- within(data,rm("Y")); Y <- data$Y
 rf <- randomForest(X, as.factor(Y),ntree=100) 
 
@@ -27,4 +28,7 @@ rule_metric <- unique(rule_metric)
 rule_classifier <- buildLearner(rule_metric,X,Y)
 readable <- presentRules(rule_classifier,colnames(X),digits=3)
 pred <- applyLearner(rule_classifier,X)
-print( 1-sum(pred==Y)/length(pred) )
+# print( 1-sum(pred==Y)/length(pred) )
+
+err <- 1-sum(pred==Y)/length(pred)
+print( paste0("error from random forest rules:",err) )

@@ -1,11 +1,20 @@
-rm(list= ls())
-library(xgboost)
-library(inTrees)
 
-# data 1
-X <- within(iris,rm("Species")); Y <- iris[,"Species"]
+print(paste0("test xgboost rules"))
+
+suppressMessages(library(xgboost))
+
+
+# X <- within(iris,rm("Species")); Y <- iris[,"Species"]
+path <- paste(getwd(), "/Test/data/german.data",sep="") #musk vehicle is good austra
+data <- read.table(path,header=TRUE,sep = ",",stringsAsFactors=TRUE)
+X <- within(data,rm("Y")); Y <- data$Y
+
+# data$Y <- as.numeric(data$Y) - 1 # gbm/bernoulli requires response to be 0 or 1
+
 model_mat <- model.matrix(~. -1, data=X)
-xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 40,objective = "multi:softprob", num_class = 3 )
+xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 40,objective = "multi:softprob", 
+	eval_metric= 'mlogloss', num_class = 3, 
+	verbose = 0)
 
 # data set 2
 # path <- paste(getwd(), "/Test/data/german.data",sep="") #musk vehicle is good austra
@@ -30,4 +39,7 @@ rule_metric <- unique(rule_metric)
 rule_classifier <- buildLearner(rule_metric,model_mat,Y)
 readable <- presentRules(rule_classifier,colnames(model_mat),digits=3)
 pred <- applyLearner(rule_classifier,model_mat)
-print( 1-sum(pred==Y)/length(pred) )
+# print( 1-sum(pred==Y)/length(pred) )
+
+err <- 1-sum(pred==Y)/length(pred)
+print( paste0("error from xgboost rules:",err) )
