@@ -36,7 +36,7 @@ a list of trees
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{RF2List}}
+\code{\link{GBM2List}}
 }
 \examples{
 library(RRF)
