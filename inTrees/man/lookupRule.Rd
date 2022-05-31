@@ -19,6 +19,9 @@ lookupRule(rules, strList)
 %%     ~~Describe \code{strList} here~~
 }
 }
+\value{
+  rules that matched to strList
+}
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

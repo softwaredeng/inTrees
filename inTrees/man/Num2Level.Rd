@@ -19,6 +19,9 @@ Num2Level(rfList, splitV)
 %%     ~~Describe \code{splitV} here~~
 }
 }
+\value{
+  data frame with numeric variables converted to categorical variables. 
+}
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

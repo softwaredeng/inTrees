@@ -22,6 +22,11 @@ rule2Table(ruleExec, X, target)
 %%     ~~Describe \code{class} here~~
 }
 }
+
+\value{
+  a matrix of indicators matching each rule condition and each row of data 
+}
+
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

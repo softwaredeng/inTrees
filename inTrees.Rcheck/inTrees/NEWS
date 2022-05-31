@@ -10,6 +10,3 @@ Version 1.2
 * add rounding option for rule extraction
 * mute Apriori function when generating frequent patterns
 * Xin Guan and Vadim Khotilovich contributed to this release
-
-Version 1.3
-* add support for ranger

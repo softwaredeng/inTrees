@@ -28,6 +28,9 @@ measureRule(ruleExec, X, target, pred = NULL, regMethod = "mean")
 %%     ~~Describe \code{pred} here~~
 }
 }
+\value{
+  data frame including rule's length, frequency, error, rule condition and prediction
+}
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

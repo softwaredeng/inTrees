@@ -22,6 +22,9 @@ formatGBM(gbmList, splitBin,X)
  predictor variable matrix
 }
 }
+\value{
+ No return value
+}
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

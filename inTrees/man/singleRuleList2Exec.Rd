@@ -20,6 +20,11 @@ singleRuleList2Exec(ruleList, typeX)
 }
 }
 
+\value{
+    data frame containing rule conditions
+}
+
+
 \examples{
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,

@@ -10,24 +10,30 @@ internal
 \usage{
 pruneSingleRule(rule, X, target, maxDecay, typeDecay)
 }
-% %- maybe also 'usage' for other objects documented here.
-% \arguments{
-%   \item{rule}{
-% %%     ~~Describe \code{rule} here~~
-% }
-%   \item{X}{
-% %%     ~~Describe \code{X} here~~
-% }
-%   \item{target}{
-% %%     ~~Describe \code{target} here~~
-% }
-%   \item{maxDecay}{
-% %%     ~~Describe \code{maxDecay} here~~
-% }
-%   \item{typeDecay}{
-% %%     ~~Describe \code{typeDecay} here~~
-% }
-% }
+
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{rule}{
+%%     ~~Describe \code{rule} here~~
+}
+  \item{X}{
+%%     ~~Describe \code{X} here~~
+}
+  \item{target}{
+%%     ~~Describe \code{target} here~~
+}
+  \item{maxDecay}{
+%%     ~~Describe \code{maxDecay} here~~
+}
+  \item{typeDecay}{
+%%     ~~Describe \code{typeDecay} here~~
+}
+}
+
+\value{
+  a pruned rule and its metrics. 
+}
+
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

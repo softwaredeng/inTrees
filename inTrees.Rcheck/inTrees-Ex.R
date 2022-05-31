@@ -16,6 +16,7 @@ pos = 'CheckExEnv')
 library('inTrees')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
 cleanEx()
 nameEx("GBM2List")
 ### * GBM2List
@@ -114,31 +115,6 @@ ruleExec <- extractRules(treeList,X) # transform to R-executable rules
 base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 base::cat("RF2List", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
-nameEx("Ranger2List")
-### * Ranger2List
-
-flush(stderr()); flush(stdout())
-
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-### Name: Ranger2List
-### Title: Transform a ranger object to a list of trees
-### Aliases: Ranger2List
-### Keywords: ranger
-
-### ** Examples
-
-library(ranger)
-data(iris)
-rf_ranger <- ranger(Species ~ ., data = iris)
-tree_list <- Ranger2List(rf_ranger)
-X <- iris[,1:(ncol(iris)-1)]
-ruleExec <- extractRules(tree_list,X) # transform to R-executable rules
-
-
-
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("Ranger2List", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
-cleanEx()
 nameEx("XGB2List")
 ### * XGB2List
 
@@ -166,27 +142,6 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 base::cat("XGB2List", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
-cleanEx()
-nameEx("applyLearner")
-### * applyLearner
-
-flush(stderr()); flush(stdout())
-
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-### Name: applyLearner
-### Title: apply a simplified tree ensemble learner (STEL) to data
-### Aliases: applyLearner
-### Keywords: apply predict
-
-### ** Examples
-
-# see function "buildLearner" for examples
-# pred <- applyLearner(learner,X)
-
-
-
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("applyLearner", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
 nameEx("buildLearner")
 ### * buildLearner
@@ -833,6 +788,7 @@ base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos =
 base::cat("voteAllRules", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 ### * <FOOTER>
 ###
+cleanEx()
 options(digits = 7L)
 base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
 grDevices::dev.off()

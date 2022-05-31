@@ -20,6 +20,10 @@ sortRule(M, decreasing = TRUE)
 }
 }
 
+\value{
+    sorted rule conditions  
+}
+
 \examples{
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,

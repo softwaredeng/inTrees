@@ -19,6 +19,10 @@ ruleList2Exec(X, allRulesList)
 %%     ~~Describe \code{allRulesList} here~~
 }
 }
+\value{
+	data frame containing rule conditions
+}
+
 %\details{
 %%  ~~ If necessary, more details than the description above ~~
 %}

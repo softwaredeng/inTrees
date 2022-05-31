@@ -41,10 +41,7 @@ applyLearner(learner, X)
 \seealso{
 \code{\link{buildLearner}}
 }
-\examples{
-# see function "buildLearner" for examples
-# pred <- applyLearner(learner,X)
-}
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ apply }

@@ -1,7 +1,7 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
+R Under development (unstable) (2022-02-15 r81747) -- "Unsuffered Consequences"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -35,6 +35,7 @@ Type 'q()' to quit R.
 > library('inTrees')
 > 
 > base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
 > cleanEx()
 > nameEx("GBM2List")
 > ### * GBM2List
@@ -50,19 +51,16 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 >     library(gbm)
-Loading required package: survival
-Loading required package: lattice
-Loading required package: splines
-Loading required package: parallel
-Loaded gbm 2.1.3
+Loaded gbm 2.1.8
 >     data(iris)
 >     X <- iris[,1:(ncol(iris)-1)]
 >     target <- iris[,"Species"] 
 >     gbmFit <- gbm(Species~ ., data=iris, n.tree = 400,
 +                     interaction.depth = 10,distribution="multinomial")
+Warning: Setting `distribution = "multinomial"` is ill-advised as it is currently broken. It exists only for backwards compatibility. Use at your own risk.
 >     treeList <- GBM2List(gbmFit,X)
 >     ruleExec = extractRules(treeList,X)
-593 rules (length<=6) were extracted from the first 100 trees.
+596 rules (length<=6) were extracted from the first 100 trees.
 >     ruleExec <- unique(ruleExec)
 >     #ruleExec <- ruleExec[1:min(2000,length(ruleExec)),,drop=FALSE]
 >     ruleMetric <- getRuleMetric(ruleExec,X,target)
@@ -79,8 +77,7 @@ Loaded gbm 2.1.3
 > base::cat("GBM2List", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > cleanEx()
 
-detaching ‘package:gbm’, ‘package:parallel’, ‘package:splines’,
-  ‘package:lattice’, ‘package:survival’
+detaching ‘package:gbm’
 
 > nameEx("Num2Level")
 > ### * Num2Level
@@ -142,7 +139,7 @@ function (rfList, splitV)
 > ### ** Examples
 > 
 > library(RRF)
-RRF 1.7
+RRF 1.9.3
 Type rrfNews() to see new features/changes/bug fixes.
 > data(iris)
 > X <- iris[,1:(ncol(iris)-1)]
@@ -159,35 +156,6 @@ Type rrfNews() to see new features/changes/bug fixes.
 > cleanEx()
 
 detaching ‘package:RRF’
-
-> nameEx("Ranger2List")
-> ### * Ranger2List
-> 
-> flush(stderr()); flush(stdout())
-> 
-> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-> ### Name: Ranger2List
-> ### Title: Transform a ranger object to a list of trees
-> ### Aliases: Ranger2List
-> ### Keywords: ranger
-> 
-> ### ** Examples
-> 
-> library(ranger)
-> data(iris)
-> rf_ranger <- ranger(Species ~ ., data = iris)
-> tree_list <- Ranger2List(rf_ranger)
-> X <- iris[,1:(ncol(iris)-1)]
-> ruleExec <- extractRules(tree_list,X) # transform to R-executable rules
-873 rules (length<=6) were extracted from the first 100 trees.
-> 
-> 
-> 
-> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-> base::cat("Ranger2List", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
-> cleanEx()
-
-detaching ‘package:ranger’
 
 > nameEx("XGB2List")
 > ### * XGB2List
@@ -210,26 +178,26 @@ detaching ‘package:ranger’
 > 	model_mat <- model.matrix(~. -1, data=X)
 > 	xgb <- xgboost(model_mat, label = as.numeric(Y) - 1, nrounds = 20, 
 + 		objective = "multi:softprob", num_class = 3 )
-[1]	train-merror:0.020000 
-[2]	train-merror:0.026667 
-[3]	train-merror:0.020000 
-[4]	train-merror:0.020000 
-[5]	train-merror:0.013333 
-[6]	train-merror:0.013333 
-[7]	train-merror:0.013333 
-[8]	train-merror:0.013333 
-[9]	train-merror:0.013333 
-[10]	train-merror:0.013333 
-[11]	train-merror:0.006667 
-[12]	train-merror:0.006667 
-[13]	train-merror:0.006667 
-[14]	train-merror:0.006667 
-[15]	train-merror:0.000000 
-[16]	train-merror:0.000000 
-[17]	train-merror:0.000000 
-[18]	train-merror:0.000000 
-[19]	train-merror:0.000000 
-[20]	train-merror:0.000000 
+[1]	train-mlogloss:0.736115 
+[2]	train-mlogloss:0.524235 
+[3]	train-mlogloss:0.387996 
+[4]	train-mlogloss:0.294146 
+[5]	train-mlogloss:0.226824 
+[6]	train-mlogloss:0.177835 
+[7]	train-mlogloss:0.141766 
+[8]	train-mlogloss:0.115002 
+[9]	train-mlogloss:0.094791 
+[10]	train-mlogloss:0.078860 
+[11]	train-mlogloss:0.066746 
+[12]	train-mlogloss:0.057845 
+[13]	train-mlogloss:0.050360 
+[14]	train-mlogloss:0.044290 
+[15]	train-mlogloss:0.039567 
+[16]	train-mlogloss:0.035267 
+[17]	train-mlogloss:0.032581 
+[18]	train-mlogloss:0.030403 
+[19]	train-mlogloss:0.028410 
+[20]	train-mlogloss:0.026969 
 > 	tree_list <- XGB2List(xgb,model_mat)
 > 
 > 
@@ -240,27 +208,6 @@ detaching ‘package:ranger’
 
 detaching ‘package:xgboost’, ‘package:data.table’
 
-> nameEx("applyLearner")
-> ### * applyLearner
-> 
-> flush(stderr()); flush(stdout())
-> 
-> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-> ### Name: applyLearner
-> ### Title: apply a simplified tree ensemble learner (STEL) to data
-> ### Aliases: applyLearner
-> ### Keywords: apply predict
-> 
-> ### ** Examples
-> 
-> # see function "buildLearner" for examples
-> # pred <- applyLearner(learner,X)
-> 
-> 
-> 
-> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-> base::cat("applyLearner", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
-> cleanEx()
 > nameEx("buildLearner")
 > ### * buildLearner
 > 
@@ -276,7 +223,7 @@ detaching ‘package:xgboost’, ‘package:data.table’
 > 
 > data(iris)
 > library(RRF)
-RRF 1.7
+RRF 1.9.3
 Type rrfNews() to see new features/changes/bug fixes.
 > X <- iris[,1:(ncol(iris)-1)]
 > target <- iris[,"Species"] 
@@ -295,8 +242,8 @@ Type rrfNews() to see new features/changes/bug fixes.
 > # format the rule and metrics as a table in latex code
 > library(xtable)
 > print(xtable(read), include.rownames=FALSE)
-% latex table generated in R 3.4.3 by xtable 1.8-2 package
-% Mon Mar 12 21:31:34 2018
+% latex table generated in R 4.2.0 by xtable 1.8-4 package
+% Mon May 30 15:26:31 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{lllll}
@@ -314,8 +261,8 @@ len & freq & err & condition & pred \\
 \end{tabular}
 \end{table}
 > print(xtable(ruleMetric[1:2,]), include.rownames=FALSE)
-% latex table generated in R 3.4.3 by xtable 1.8-2 package
-% Mon Mar 12 21:31:34 2018
+% latex table generated in R 4.2.0 by xtable 1.8-4 package
+% Mon May 30 15:26:31 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{lllll}
@@ -424,7 +371,7 @@ detaching ‘package:xtable’, ‘package:RRF’
 > ### ** Examples
 > 
 >     library(RRF)
-RRF 1.7
+RRF 1.9.3
 Type rrfNews() to see new features/changes/bug fixes.
 >     data(iris)
 >     X <- iris[,1:(ncol(iris)-1)]
@@ -535,7 +482,7 @@ function (gbmList, splitBin, X)
 > ### ** Examples
 > 
 > library(RRF)
-RRF 1.7
+RRF 1.9.3
 Type rrfNews() to see new features/changes/bug fixes.
 > library(arules)
 Loading required package: Matrix
@@ -555,8 +502,6 @@ The following objects are masked from ‘package:base’:
 705 rules (length<=6) were extracted from the first 100 trees.
 > ruleMetric <- getRuleMetric(ruleExec,X,target) 
 > freqPattern <- getFreqPattern(ruleMetric)
-Warning in apriori(trans1, parameter = list(supp = minsup, conf = minconf,  :
-  Mining stopped (maxlen reached). Only patterns up to a length of 4 returned!
 > freqPatternMetric <- getRuleMetric(freqPattern,X,target)
 > 
 > 
@@ -581,7 +526,7 @@ detaching ‘package:arules’, ‘package:Matrix’, ‘package:RRF’
 > ### ** Examples
 > 
 > library(RRF)
-RRF 1.7
+RRF 1.9.3
 Type rrfNews() to see new features/changes/bug fixes.
 > data(iris)
 > X <- iris[,1:(ncol(iris)-1)]
@@ -1162,9 +1107,10 @@ function (ruleMetric, X, type = "r", method = "median")
 > base::cat("voteAllRules", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > ### * <FOOTER>
 > ###
+> cleanEx()
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  7.849 0.286 6.306 0 0 
+Time elapsed:  6.073 0.222 6.339 0 0 
 > grDevices::dev.off()
 null device 
           1 

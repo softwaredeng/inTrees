@@ -16,6 +16,9 @@ getTypeX(X)
 %%     ~~Describe \code{X} here~~
 }
 }
+\value{
+ A vector indicating each variable's type: numeric: 1; categorical: 2
+}
 % \details{
 % %%  ~~ If necessary, more details than the description above ~~
 % }

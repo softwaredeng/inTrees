@@ -15,7 +15,6 @@ Num2Level	Num2Level
 presentRules	presentRules
 pruneRule	pruneRule
 pruneSingleRule	pruneSingleRule
-Ranger2List	Ranger2List
 RF2List	RF2List
 rule2Table	rule2Table
 ruleList2Exec	ruleList2Exec

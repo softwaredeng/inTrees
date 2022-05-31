@@ -41,6 +41,9 @@ treeVisit(tree, rowIx, count, ruleSet, rule, levelX, length, max_length, digits)
 
 }
 
+\value{
+    a list containing rules and the count   
+}
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
