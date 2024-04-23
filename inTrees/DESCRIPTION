@@ -1,7 +1,7 @@
 Package: inTrees
 Title: Interpret Tree Ensembles
-Version: 1.4
-Date: 2024-04-22
+Version: 1.5
+Date: 2024-04-23
 Imports: RRF, arules, gbm, xtable, xgboost, data.table, methods
 Authors@R: c(person("Houtao", "Deng", role = c("aut", "cre"),
                      email = "softwaredeng@gmail.com"),
@@ -11,7 +11,7 @@ Description: For tree ensembles such as random forests, regularized random fores
 Maintainer: Houtao Deng <softwaredeng@gmail.com>
 BugReports: https://github.com/softwaredeng/inTrees/issues
 License: GPL (>= 3)
-Packaged: 2024-04-22 04:55:28 UTC; houtaodeng
+Packaged: 2024-04-23 04:55:28 UTC; houtaodeng
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2024-04-22 21:26:06
+Date/Publication: 2024-04-23 21:26:06
