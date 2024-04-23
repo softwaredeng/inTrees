@@ -1,4 +1,36 @@
 
+2024-04 Update
+
+Install required software:
+- install MacTex
+>> need to install the complete one ~2G
+- Xcode
+
+install current version of r-devel
+
+# install R R-4.3.3-arm64.pkg
+# change description, news file
+# install R packages inside R
+R
+install.packages(c('xtable', 'xgboost', 'randomForest','gbm','RRF','arules','data.table'),repos='http://cran.us.r-project.org')
+
+# install tidy https://binaries.html-tidy.org/
+# otherwise it has the issues of Found the following HTML validation problems for html files
+
+# git clone 
+git clone git@github.com:softwaredeng/inTrees.git
+
+# build .tar.gz within the inTree directory
+R CMD build inTrees
+R CMD check --as-cran inTrees_1.4.tar.gz
+
+# submitting package to CRAN 
+# use the submission form at http://CRAN.R-project.org/submit.html (and not send an email). You will be sent a confirmation email and click the link to confirm
+-- Houtao Deng  softwaredeng@gmail.com
+
+
+---- previous notes
+
 
 create packages in MAC:
 

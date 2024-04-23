@@ -1,16 +1,16 @@
 * using log directory ‘/Users/houtaodeng/inTrees/inTrees.Rcheck’
-* using R Under development (unstable) (2022-02-15 r81747)
-* using platform: x86_64-apple-darwin17.0 (64-bit)
+* using R version 4.4.0 RC (2024-04-16 r86468)
+* using platform: aarch64-apple-darwin20
+* R was compiled by
+    Apple clang version 14.0.0 (clang-1400.0.29.202)
+    GNU Fortran (GCC) 12.2.0
+* running under: macOS Sonoma 14.3.1
 * using session charset: UTF-8
 * using option ‘--as-cran’
 * checking for file ‘inTrees/DESCRIPTION’ ... OK
-* this is package ‘inTrees’ version ‘1.3’
-* checking CRAN incoming feasibility ... NOTE
+* this is package ‘inTrees’ version ‘1.4’
+* checking CRAN incoming feasibility ... [3s/13s] Note_to_CRAN_maintainers
 Maintainer: ‘Houtao Deng <softwaredeng@gmail.com>’
-
-New submission
-
-Package was archived on CRAN
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -29,7 +29,7 @@ Package was archived on CRAN
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
-* checking R files for non-ASCII characters ... OK
+* checking code files for non-ASCII characters ... OK
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK
 * checking whether the package can be loaded with stated dependencies ... OK
@@ -54,7 +54,8 @@ Package was archived on CRAN
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
+* checking HTML version of manual ... OK
 * checking for non-standard things in the check directory ... OK
 * checking for detritus in the temp directory ... OK
 * DONE
-Status: 1 NOTE
+Status: OK

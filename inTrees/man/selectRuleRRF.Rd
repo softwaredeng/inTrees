@@ -19,6 +19,7 @@ a matrix including the rules and metrics
 predictor variable matrix
 }
   \item{target}{
+response variable
 %%     ~~Describe \code{target} here~~
 }
 }

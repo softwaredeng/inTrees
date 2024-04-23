@@ -1,139 +1,341 @@
 Hmm ... looks like a package
+Converting parsed Rd's to LaTeX ..
+Creating pdf output from LaTeX ...
 
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-22>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
 (./Rd2.tex
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 
-Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-
-Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/makeidx.sty)
 Writing index file Rd2.idx
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
 No file Rd2.aux.
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1phv.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/utf8.def) [1{/Users/houtaodeng/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (7.30838pt too wide) in paragraph at lines 245--246
-[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen be-tween 1 and maxdepth 
-[4] [5] [6] [7] [8] [9]
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+No file Rd2.toc.
+[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/20
+24/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2] [3] [4]
+Overfull \hbox (7.30838pt too wide) in paragraph at lines 269--270
+[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen 
+be-tween 1 and maxdepth 
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/ts1zi4.fd) [18{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}] [19]
+[20]
 No file Rd2.ind.
-[10] (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux)
+[21]
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
  )
-(see the transcript file for additional information){/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (10 pages, 95931 bytes).
+(see the transcript file for additional information)</usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (21 pages, 112051 bytes).
 Transcript written on Rd2.log.
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex)
- restricted \write18 enabled.
-entering extended mode
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-22>
-(./Rd2.tex
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
-
-Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-
-Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/latin1.def))
-Writing index file Rd2.idx
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty)) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1phv.fd) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.toc) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/utf8.def) [1{/Users/houtaodeng/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (7.30838pt too wide) in paragraph at lines 245--246
-[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen be-tween 1 and maxdepth 
-[4] [5] [6] [7] [8] [9]
-No file Rd2.ind.
-[10] (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux) )
-(see the transcript file for additional information){/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (10 pages, 97606 bytes).
-Transcript written on Rd2.log.
-This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (36 entries accepted, 0 rejected).
-Sorting entries....done (191 comparisons).
-Generating output file Rd2.ind....done (81 lines written, 2 warnings).
+This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (62 entries accepted, 0 rejected).
+Sorting entries....done (375 comparisons).
+Generating output file Rd2.ind....done (129 lines written, 1 warning).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-22>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
 (./Rd2.tex
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 
-Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-
-Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/makeidx.sty)
 Writing index file Rd2.idx
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty)) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1phv.fd) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.toc) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/utf8.def) [1{/Users/houtaodeng/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (7.30838pt too wide) in paragraph at lines 245--246
-[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen be-tween 1 and maxdepth 
-[4] [5] [6] [7] [8] [9] (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.ind [10] [11]) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.aux)
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.out)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.out)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.toc [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr
+/local/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}])
+[2] [3] [4]
+Overfull \hbox (7.30838pt too wide) in paragraph at lines 269--270
+[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen 
+be-tween 1 and maxdepth 
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/ts1zi4.fd) [19{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}] [20]
+[21]
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.ind [22] [23])
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
  )
-(see the transcript file for additional information){/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (11 pages, 109068 bytes).
+(see the transcript file for additional information)</usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on Rd2.pdf (23 pages, 128432 bytes).
 Transcript written on Rd2.log.
-This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (36 entries accepted, 0 rejected).
-Sorting entries....done (191 comparisons).
-Generating output file Rd2.ind....done (81 lines written, 2 warnings).
+This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (62 entries accepted, 0 rejected).
+Sorting entries....done (375 comparisons).
+Generating output file Rd2.ind....done (129 lines written, 1 warning).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex)
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-22>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
 (./Rd2.tex
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 
-Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-
-Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 396.
-
-) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+)))) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/makeidx.sty)
 Writing index file Rd2.idx
-(/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty)) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.out) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1phv.fd) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.toc) (/Users/houtaodeng/Library/TinyTeX/texmf-dist/tex/latex/base/utf8.def) [1{/Users/houtaodeng/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (7.30838pt too wide) in paragraph at lines 245--246
-[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen be-tween 1 and maxdepth 
-[4] [5] [6] [7] [8] [9] (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.ind [10] [11]) (/private/var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T/RtmpBTEpS6/Rd2pdf18150f76de9e/Rd2.aux) )
-(see the transcript file for additional information){/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}</Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/houtaodeng/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (11 pages, 109259 bytes).
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.aux)
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.out)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.out)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.toc [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/p
+dftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr
+/local/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}])
+[2] [3] [4]
+Overfull \hbox (7.30838pt too wide) in paragraph at lines 269--270
+[]\T1/ptm/m/n/10 the max depth for each tree is an in-te-ger ran-domly cho-sen 
+be-tween 1 and maxdepth 
+[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inconsolata/ts1zi4.fd) [19{/usr/l
+ocal/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}] [20]
+[21]
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.ind [22] [23])
+(/private/var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T/RtmpeqlviP/Rd2pdf7b14
+35106ff8/Rd2.aux) )
+(see the transcript file for additional information)</usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on Rd2.pdf (23 pages, 129548 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘inTrees-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/vf/pn4s3pfs5j7897573m28sy9w0000gp/T//RtmpBTEpS6/Rd2pdf18150f76de9e'
+You may want to clean up by 'rm -Rf /var/folders/yd/lhjd_1p566z67pz4y4q5lr5r0000gp/T//RtmpeqlviP/Rd2pdf7b1435106ff8'
